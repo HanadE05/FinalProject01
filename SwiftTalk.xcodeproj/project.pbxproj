@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		474CF1412CD177FE00DB52FA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 474CF1402CD177FE00DB52FA /* FirebaseAuth */; };
+		474CF1432CD177FE00DB52FA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 474CF1422CD177FE00DB52FA /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		474CF11F2CD1753400DB52FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,15 +29,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		474CF10E2CD1753100DB52FA /* Swift Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		474CF11E2CD1753400DB52FA /* Swift TalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift TalkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		474CF1282CD1753400DB52FA /* Swift TalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift TalkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		474CF10E2CD1753100DB52FA /* SwiftTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		474CF11E2CD1753400DB52FA /* SwiftTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		474CF1282CD1753400DB52FA /* SwiftTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		474CF1102CD1753100DB52FA /* Swift Talk */ = {
+		474CF1102CD1753100DB52FA /* SwiftTalk */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Swift Talk";
+			path = SwiftTalk;
 			sourceTree = "<group>";
 		};
 		474CF1212CD1753400DB52FA /* Swift TalkTests */ = {
@@ -40,9 +45,9 @@
 			path = "Swift TalkTests";
 			sourceTree = "<group>";
 		};
-		474CF12B2CD1753400DB52FA /* Swift TalkUITests */ = {
+		474CF12B2CD1753400DB52FA /* SwiftTalkUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Swift TalkUITests";
+			path = SwiftTalkUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474CF1412CD177FE00DB52FA /* FirebaseAuth in Frameworks */,
+				474CF1432CD177FE00DB52FA /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +82,9 @@
 		474CF1052CD1753100DB52FA = {
 			isa = PBXGroup;
 			children = (
-				474CF1102CD1753100DB52FA /* Swift Talk */,
+				474CF1102CD1753100DB52FA /* SwiftTalk */,
 				474CF1212CD1753400DB52FA /* Swift TalkTests */,
-				474CF12B2CD1753400DB52FA /* Swift TalkUITests */,
+				474CF12B2CD1753400DB52FA /* SwiftTalkUITests */,
 				474CF10F2CD1753100DB52FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +92,9 @@
 		474CF10F2CD1753100DB52FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				474CF10E2CD1753100DB52FA /* Swift Talk.app */,
-				474CF11E2CD1753400DB52FA /* Swift TalkTests.xctest */,
-				474CF1282CD1753400DB52FA /* Swift TalkUITests.xctest */,
+				474CF10E2CD1753100DB52FA /* SwiftTalk.app */,
+				474CF11E2CD1753400DB52FA /* SwiftTalkTests.xctest */,
+				474CF1282CD1753400DB52FA /* SwiftTalkUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		474CF10D2CD1753100DB52FA /* Swift Talk */ = {
+		474CF10D2CD1753100DB52FA /* SwiftTalk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 474CF1322CD1753400DB52FA /* Build configuration list for PBXNativeTarget "Swift Talk" */;
+			buildConfigurationList = 474CF1322CD1753400DB52FA /* Build configuration list for PBXNativeTarget "SwiftTalk" */;
 			buildPhases = (
 				474CF10A2CD1753100DB52FA /* Sources */,
 				474CF10B2CD1753100DB52FA /* Frameworks */,
@@ -108,18 +115,20 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				474CF1102CD1753100DB52FA /* Swift Talk */,
+				474CF1102CD1753100DB52FA /* SwiftTalk */,
 			);
-			name = "Swift Talk";
+			name = SwiftTalk;
 			packageProductDependencies = (
+				474CF1402CD177FE00DB52FA /* FirebaseAuth */,
+				474CF1422CD177FE00DB52FA /* FirebaseFirestore */,
 			);
 			productName = "Swift Talk";
-			productReference = 474CF10E2CD1753100DB52FA /* Swift Talk.app */;
+			productReference = 474CF10E2CD1753100DB52FA /* SwiftTalk.app */;
 			productType = "com.apple.product-type.application";
 		};
-		474CF11D2CD1753400DB52FA /* Swift TalkTests */ = {
+		474CF11D2CD1753400DB52FA /* SwiftTalkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 474CF1352CD1753400DB52FA /* Build configuration list for PBXNativeTarget "Swift TalkTests" */;
+			buildConfigurationList = 474CF1352CD1753400DB52FA /* Build configuration list for PBXNativeTarget "SwiftTalkTests" */;
 			buildPhases = (
 				474CF11A2CD1753400DB52FA /* Sources */,
 				474CF11B2CD1753400DB52FA /* Frameworks */,
@@ -133,16 +142,16 @@
 			fileSystemSynchronizedGroups = (
 				474CF1212CD1753400DB52FA /* Swift TalkTests */,
 			);
-			name = "Swift TalkTests";
+			name = SwiftTalkTests;
 			packageProductDependencies = (
 			);
 			productName = "Swift TalkTests";
-			productReference = 474CF11E2CD1753400DB52FA /* Swift TalkTests.xctest */;
+			productReference = 474CF11E2CD1753400DB52FA /* SwiftTalkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		474CF1272CD1753400DB52FA /* Swift TalkUITests */ = {
+		474CF1272CD1753400DB52FA /* SwiftTalkUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 474CF1382CD1753400DB52FA /* Build configuration list for PBXNativeTarget "Swift TalkUITests" */;
+			buildConfigurationList = 474CF1382CD1753400DB52FA /* Build configuration list for PBXNativeTarget "SwiftTalkUITests" */;
 			buildPhases = (
 				474CF1242CD1753400DB52FA /* Sources */,
 				474CF1252CD1753400DB52FA /* Frameworks */,
@@ -154,13 +163,13 @@
 				474CF12A2CD1753400DB52FA /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				474CF12B2CD1753400DB52FA /* Swift TalkUITests */,
+				474CF12B2CD1753400DB52FA /* SwiftTalkUITests */,
 			);
-			name = "Swift TalkUITests";
+			name = SwiftTalkUITests;
 			packageProductDependencies = (
 			);
 			productName = "Swift TalkUITests";
-			productReference = 474CF1282CD1753400DB52FA /* Swift TalkUITests.xctest */;
+			productReference = 474CF1282CD1753400DB52FA /* SwiftTalkUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 474CF1092CD1753100DB52FA /* Build configuration list for PBXProject "Swift Talk" */;
+			buildConfigurationList = 474CF1092CD1753100DB52FA /* Build configuration list for PBXProject "SwiftTalk" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,14 +204,17 @@
 			);
 			mainGroup = 474CF1052CD1753100DB52FA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				474CF13F2CD177FE00DB52FA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 474CF10F2CD1753100DB52FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				474CF10D2CD1753100DB52FA /* Swift Talk */,
-				474CF11D2CD1753400DB52FA /* Swift TalkTests */,
-				474CF1272CD1753400DB52FA /* Swift TalkUITests */,
+				474CF10D2CD1753100DB52FA /* SwiftTalk */,
+				474CF11D2CD1753400DB52FA /* SwiftTalkTests */,
+				474CF1272CD1753400DB52FA /* SwiftTalkUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +270,12 @@
 /* Begin PBXTargetDependency section */
 		474CF1202CD1753400DB52FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 474CF10D2CD1753100DB52FA /* Swift Talk */;
+			target = 474CF10D2CD1753100DB52FA /* SwiftTalk */;
 			targetProxy = 474CF11F2CD1753400DB52FA /* PBXContainerItemProxy */;
 		};
 		474CF12A2CD1753400DB52FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 474CF10D2CD1753100DB52FA /* Swift Talk */;
+			target = 474CF10D2CD1753100DB52FA /* SwiftTalk */;
 			targetProxy = 474CF1292CD1753400DB52FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Swift Talk/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftTalk/Preview Content\"";
 				DEVELOPMENT_TEAM = 8G9SF8YAPG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Swift Talk/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftTalk/Preview Content\"";
 				DEVELOPMENT_TEAM = 8G9SF8YAPG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -461,7 +473,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Talk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift Talk";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTalk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftTalk";
 			};
 			name = Debug;
 		};
@@ -480,7 +492,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Talk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift Talk";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftTalk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftTalk";
 			};
 			name = Release;
 		};
@@ -521,7 +533,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		474CF1092CD1753100DB52FA /* Build configuration list for PBXProject "Swift Talk" */ = {
+		474CF1092CD1753100DB52FA /* Build configuration list for PBXProject "SwiftTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				474CF1302CD1753400DB52FA /* Debug */,
@@ -530,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		474CF1322CD1753400DB52FA /* Build configuration list for PBXNativeTarget "Swift Talk" */ = {
+		474CF1322CD1753400DB52FA /* Build configuration list for PBXNativeTarget "SwiftTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				474CF1332CD1753400DB52FA /* Debug */,
@@ -539,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		474CF1352CD1753400DB52FA /* Build configuration list for PBXNativeTarget "Swift TalkTests" */ = {
+		474CF1352CD1753400DB52FA /* Build configuration list for PBXNativeTarget "SwiftTalkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				474CF1362CD1753400DB52FA /* Debug */,
@@ -548,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		474CF1382CD1753400DB52FA /* Build configuration list for PBXNativeTarget "Swift TalkUITests" */ = {
+		474CF1382CD1753400DB52FA /* Build configuration list for PBXNativeTarget "SwiftTalkUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				474CF1392CD1753400DB52FA /* Debug */,
@@ -558,6 +570,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		474CF13F2CD177FE00DB52FA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		474CF1402CD177FE00DB52FA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 474CF13F2CD177FE00DB52FA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		474CF1422CD177FE00DB52FA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 474CF13F2CD177FE00DB52FA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 474CF1062CD1753100DB52FA /* Project object */;
 }

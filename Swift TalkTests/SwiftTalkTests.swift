@@ -6,9 +6,9 @@
 //
 
 import Testing
-@testable import Swift_Talk
+@testable import SwiftTalk
 
-struct Swift_TalkTests {
+struct SwiftTalkTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.
